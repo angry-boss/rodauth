@@ -3,8 +3,6 @@ $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require 'minitest/autorun'
 require 'rack/test'
 
-require 'roda/plugins/cors'
-
 
 ENV['RACK_ENV'] = 'test'
 
