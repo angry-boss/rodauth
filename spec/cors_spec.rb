@@ -1,11 +1,6 @@
-require 'spec_helper'
-
+require_relative 'spec_helper'
 
 describe 'Cors' do
-
-  it 'has a version number' do
-    ::Roda::RodaPlugins::Cors::VERSION.wont_be_nil
-  end
 
   describe 'with default options' do
     let(:app) do
