@@ -1,0 +1,8 @@
+.autotest
+CHANGELOG.rdoc
+Manifest.txt
+README.rdoc
+Rakefile
+lib/minitest/emoji.rb
+lib/minitest/emoji_plugin.rb
+test/test_minitest_emoji.rb

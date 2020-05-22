@@ -1,0 +1,26 @@
+dist: bionic
+language: ruby
+cache: bundler
+
+rvm:
+  - ruby-head
+  - 2.7.0
+  - 2.6.5
+  - 2.5.7
+  - 2.4.9
+
+gemfile:
+  - gemfiles/cose_head.gemfile
+  - gemfiles/openssl_head.gemfile
+  - gemfiles/openssl_2_1.gemfile
+  - gemfiles/openssl_2_0.gemfile
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - rvm: ruby-head
+    - gemfile: gemfiles/cose_head.gemfile
+    - gemfile: gemfiles/openssl_head.gemfile
+
+before_install:
+  - gem install bundler -v "~> 2.0"

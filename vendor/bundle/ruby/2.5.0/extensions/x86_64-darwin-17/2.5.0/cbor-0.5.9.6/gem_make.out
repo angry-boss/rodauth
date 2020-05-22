@@ -1,0 +1,31 @@
+current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/cbor-0.5.9.6/ext/cbor
+/Users/ilmira/.rvm/rubies/ruby-2.5.5/bin/ruby -I /Users/ilmira/.rvm/rubies/ruby-2.5.5/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200522-12044-onnxm4.rb extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... yes
+checking for rb_str_replace() in ruby.h... yes
+checking for rb_big_new() in ruby.h... yes
+checking for rb_intern_str() in ruby.h... yes
+checking for rb_sym2str() in ruby.h... yes
+checking for rb_str_intern() in ruby.h... yes
+checking for rb_integer_unpack() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/cbor-0.5.9.6/ext/cbor
+make "DESTDIR=" clean
+
+current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/cbor-0.5.9.6/ext/cbor
+make "DESTDIR="
+compiling buffer.c
+compiling buffer_class.c
+compiling core_ext.c
+compiling packer.c
+compiling packer_class.c
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+compiling unpacker_class.c
+linking shared-object cbor/cbor.bundle
+
+current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/cbor-0.5.9.6/ext/cbor
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cbor.bundle ./.gem.20200522-12044-7qascw/cbor
