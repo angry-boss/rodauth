@@ -6,6 +6,8 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.6.3-stretch-node
+      environment:
+                RACK_ENV: test
     executor: ruby/default
     steps:
       - checkout
