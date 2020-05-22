@@ -1,33 +1,13 @@
 source 'https://rubygems.org'
 
-if RUBY_VERSION < '2.0'
-  gem 'rake', '< 10'
-  gem 'json', '<1.8.5'
-else
-  gem 'rake'
-  gem 'json'
-end
+gem 'rake'
+gem 'json'
 
-if RUBY_VERSION < '2.2'
-  gem 'rack', '<2'
-  gem 'rack-test', '< 0.7.0'
-end
 
-platforms :ruby do
-  if RUBY_VERSION < '2.0'
-    gem "pg", '<0.19.0'
-  else
-    gem "pg"
-  end
+gem "pg"
+gem "mysql2", '<0.5'
 
-  if RUBY_VERSION < '2.0'
-    gem "mysql2", '<0.5'
-  else
-    gem "mysql2"
-  end
-
-  gem 'sqlite3'
-end
+gem 'sqlite3'
 
 platforms :jruby do
   gem 'jdbc-postgres'
@@ -35,46 +15,13 @@ platforms :jruby do
   gem 'jdbc-sqlite3'
 end
 
-if RUBY_VERSION < '2.3'
-  gem 'capybara', '<3.2'
-else
-  gem 'capybara'
-end
+gem 'capybara'
 
-if RUBY_VERSION < '2.1'
-  gem 'addressable', '< 2.4'
-end
+gem 'jwt'
 
-if RUBY_VERSION < '2.1'
-  gem 'nokogiri', '< 1.7'
-end
+gem 'rotp'
 
-if RUBY_VERSION < '2.0'
-  gem 'mime-types', '< 3'
-end
-
-if RUBY_VERSION < '2.1'
-  gem 'jwt', '< 2'
-else
-  gem 'jwt'
-end
-
-if RUBY_VERSION < '2.0'
-  gem 'rotp', '< 4'
-elsif RUBY_VERSION < '2.1'
-  gem 'rotp', '< 5'
-else
-  gem 'rotp'
-end
-
-platforms :ruby do
-  # cbor dependency not supported on JRuby
-  if RUBY_VERSION > '2.4'
-    gem 'webauthn'
-  elsif RUBY_VERSION > '2.3'
-    gem 'webauthn', '<2.2.0'
-  end
-end
+gem 'webauthn'
 
 gem 'rubyzip'
 gem 'rqrcode'
@@ -88,9 +35,4 @@ gem 'mail'
 gem 'minitest-hooks', '>= 1.1'
 gem 'minitest-global_expectations'
 
-if RUBY_VERSION < '2.4.0'
-  # Until mintest 5.12.0 is fixed
-  gem 'minitest', '5.11.3'
-else
-  gem 'minitest', '>= 5.7.0'
-end
+gem 'minitest', '<= 5.11.3'
