@@ -6,11 +6,11 @@ require 'rack/test'
 
 ENV['RACK_ENV'] = 'test'
 
-# def create_app(&block)
-#   c = Class.new(Roda)
-#   c.class_eval(&block)
-#   c
-# end
+def create_app(&block)
+  c = Class.new(Roda)
+  c.class_eval(&block)
+  c
+end
 
 describe 'Cors' do
   before(:all) do
