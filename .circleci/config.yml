@@ -6,11 +6,9 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.6.3-stretch-node
-      environment:
-                RACK_ENV: test
     executor: ruby/default
     steps:
       - checkout
       - run:
           name: test
-          command: gem install bundler:2.1.4 && bundle install && rake spec
+          command: gem install bundler:2.1.4 && bundle install --path=vendor/bundle && rake spec
