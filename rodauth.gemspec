@@ -58,5 +58,5 @@ END
   s.add_development_dependency("minitest")
   s.add_development_dependency("minitest-global_expectations")
   s.add_development_dependency("minitest-hooks", '>=1.1.0')
-  s.add_development_dependency("capybara", '>=2.1.0')
+  s.add_development_dependency("capybara", '~> 2.13')
 end
