@@ -13,10 +13,10 @@ ENV['RACK_ENV'] = 'test'
 # end
 
 describe 'Cors' do
-
   before(:all) do
-    Roda.define_method(:create_app, &block)
-  end  
+    Roda.define_method(:create_app, app)
+  end
+
   describe 'with default options' do
     let(:app) do
       create_app do
