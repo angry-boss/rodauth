@@ -7,15 +7,21 @@ require 'rack/test'
 ENV['RACK_ENV'] = 'test'
 
 
-def create_app(&block)
-  c = Class.new(Roda)
-  c.class_eval(&block)
-  c
-end
+# def create_app(&block)
+#   c = Class.new(Roda)
+#   c.class_eval(&block)
+#   c
+# end
 
 describe 'Cors' do
 
   describe 'with default options' do
+    before(:all) do
+      Roda.define_method(:create_app, &block)
+      # c = Class.new(Roda)
+      # c.class_eval(&block)
+      # create_app(&block)
+    end
     let(:app) do
       create_app do
         plugin :all_verbs
@@ -30,11 +36,9 @@ describe 'Cors' do
     it 'sets Access-Control-Allow-Origin header to "*" on '\
        'or test environment' do
       get '/'
-      last_response['Access-Control-Allow-Origin'].must_be :ok?
-      #last_response.must_be :ok?
-      last_response.body['wazaaaaaa'].must_equal
-      # last_response.body.must_equal 'wazaaaaaa'
-      # last_response['Access-Control-Allow-Origin'].must_equal '*'
+      last_response.must_be :ok?
+      last_response.body.must_equal 'wazaaaaaa'
+      last_response['Access-Control-Allow-Origin'].must_equal '*'
     end
 
     it 'sets Access-Control-Allow-Origin header to "*" on '\
@@ -68,6 +72,12 @@ describe 'Cors' do
   end
 
   describe 'with empty allowed_origins' do
+    before(:all) do
+      Roda.define_method(:create_app, &block)
+      # c = Class.new(Roda)
+      # c.class_eval(&block)
+      # create_app(&block)
+    end
     let(:app) do
       create_app do
         plugin :cors, allowed_origins: []
