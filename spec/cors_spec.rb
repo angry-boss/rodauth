@@ -119,6 +119,12 @@ describe 'Cors' do
   end
 
   describe 'with a single allowed_origin' do
+    before(:all) do
+      Roda.define_method(:create_app, &block)
+      # c = Class.new(Roda)
+      # c.class_eval(&block)
+      # create_app(&block)
+    end
     let(:app) do
       create_app do
         plugin :cors, allowed_origins: ['http://hips.com']
@@ -138,6 +144,12 @@ describe 'Cors' do
   end
 
   describe 'with multiple allowed_origins' do
+    before(:all) do
+      Roda.define_method(:create_app, &block)
+      # c = Class.new(Roda)
+      # c.class_eval(&block)
+      # create_app(&block)
+    end
     let(:app) do
       create_app do
         plugin :cors, allowed_origins: ['http://hips.com', 'http://dontlie.com']
