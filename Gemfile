@@ -12,3 +12,4 @@ gem "minitest"
 gem "minitest-global_expectations"
 gem "minitest-hooks", '>=1.1.0'
 gem "capybara", '~> 2.13'
+gem "poltergeist"
