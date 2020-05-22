@@ -14,7 +14,7 @@ end
 
 describe 'Cors' do
   before(:all) do
-    Roda.define_method(:create_app, app)
+    Roda.define_method(:create_app, &block)
   end
 
   describe 'with default options' do
