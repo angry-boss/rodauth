@@ -11,4 +11,4 @@ jobs:
       - checkout
       - run:
           name: test
-          command: gem install bundler:2.1.4 && bundle install --path=vendor/bundle && rake spec
+          command: gem install bundler:2.1.4 && gem install capybara && bundle install --path=vendor/bundle && rake spec
