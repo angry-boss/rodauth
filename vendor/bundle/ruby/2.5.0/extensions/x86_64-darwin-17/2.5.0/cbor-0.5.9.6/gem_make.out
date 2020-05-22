@@ -1,5 +1,5 @@
 current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/cbor-0.5.9.6/ext/cbor
-/Users/ilmira/.rvm/rubies/ruby-2.5.5/bin/ruby -I /Users/ilmira/.rvm/rubies/ruby-2.5.5/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200522-12044-onnxm4.rb extconf.rb
+/Users/ilmira/.rvm/rubies/ruby-2.5.5/bin/ruby -I /Users/ilmira/.rvm/rubies/ruby-2.5.5/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200522-22980-150hh76.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -28,4 +28,4 @@ linking shared-object cbor/cbor.bundle
 
 current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/cbor-0.5.9.6/ext/cbor
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cbor.bundle ./.gem.20200522-12044-7qascw/cbor
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cbor.bundle ./.gem.20200522-22980-luii79/cbor

@@ -1,5 +1,5 @@
 current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/ext/mri
-/Users/ilmira/.rvm/rubies/ruby-2.5.5/bin/ruby -I /Users/ilmira/.rvm/rubies/ruby-2.5.5/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200522-12044-17ct9kx.rb extconf.rb
+/Users/ilmira/.rvm/rubies/ruby-2.5.5/bin/ruby -I /Users/ilmira/.rvm/rubies/ruby-2.5.5/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200522-22980-10pf44p.rb extconf.rb
 creating Makefile
 
 current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/ext/mri
@@ -32,4 +32,4 @@ linking shared-object bcrypt_ext.bundle
 
 current directory: /Users/ilmira/Documents/dev/rodauth/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.13/ext/mri
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bcrypt_ext.bundle ./.gem.20200522-12044-qbmexp
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bcrypt_ext.bundle ./.gem.20200522-22980-hv1li8
