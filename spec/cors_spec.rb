@@ -32,7 +32,7 @@ describe 'Cors' do
       get '/'
       last_response['Access-Control-Allow-Origin'].must_be :ok?
       #last_response.must_be :ok?
-      last_response.body['wazaaaaaa'].must_be :equal
+      last_response.body['wazaaaaaa'].must_equal
       # last_response.body.must_equal 'wazaaaaaa'
       # last_response['Access-Control-Allow-Origin'].must_equal '*'
     end
